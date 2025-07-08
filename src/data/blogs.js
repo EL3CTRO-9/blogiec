@@ -350,7 +350,7 @@ export const blogs = [
   {
   id: "AI-Powered Cybersecurity Training for Small Businesses",
   title: "AI-Powered Cybersecurity Training for Small Businesses: Benefits and Risks",
-  image: ai_cybersec_training,
+  image: train,
   excerpt:
     "AI-driven cybersecurity training offers small businesses affordable, adaptive security education—but AI hallucinations and errors can create new vulnerabilities if left unchecked.",
   content: `
