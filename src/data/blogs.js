@@ -410,7 +410,7 @@ export const blogs = [
     <h2>Conclusion</h2>
     <p>
       AI-powered cybersecurity training can empower small businesses to defend against evolving threats, but only if its risks—especially AI hallucinations—are actively managed. Combining AI innovation with human vigilance is key to building a resilient security culture.
-    </p>
+    </p> 
   `  ,
   }
 ];
