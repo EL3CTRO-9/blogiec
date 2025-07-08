@@ -15,7 +15,7 @@ export default function AboutSection() {
       {/* ===== PROFILE IMAGE & BIO ===== */}
       <div className="about__main">
         <div className="about__image">
-         <img src={profilePic}  />
+         <img src={profilePic} alt="Profile picture" />
         </div>
         <div className="about__text">
           <h2>About Me </h2>
