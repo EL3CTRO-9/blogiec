@@ -1,0 +1,63 @@
+/* src/components/BlogDetail.css */
+
+/* Entire blog detail section (also full-width optional) */
+.blog-detail {
+    padding: 4rem 0;
+    background-color: #000000; /* or transparent if you have a different background */
+  }
+  
+  /* Blog title */
+  .blog-detail__title {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #F0E6D2;
+  }
+  
+  /* Blog banner image */
+  .blog-detail__image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: block;
+  }
+  
+  /* Blog content container */
+  .blog-detail__content {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #F0E6D2;
+  }
+  
+  /* Style headings inside content */
+  .blog-detail__content h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-detail__content h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Style paragraphs, lists, code blocks, etc. */
+  .blog-detail__content p {
+    margin-bottom: 1rem;
+  }
+  
+  .blog-detail__content code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  
+  .blog-detail__content ul,
+  .blog-detail__content ol {
+    margin: 1rem 0 1rem 1.5rem;
+  }
+  

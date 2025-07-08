@@ -1,0 +1,102 @@
+/* src/components/GiacCarousel.css */
+
+/* 1) ENTIRE CAROUSEL CONTAINER */
+.giac-carousel-container {
+    position: relative;
+    overflow-x: hidden; /* hide anything outside the left/right edges */
+    padding: 1rem 0;    /* vertical space above/below the carousel */
+    background-color: var(--background); /* use your site’s background variable or a hex */
+    max-width: 1080px;    /* constrains it to at most 800px */
+    margin: 0 auto;     /* ← add this to center */
+  }
+  
+  /* 2) FADE OVERLAYS ON LEFT & RIGHT */
+  .giac-carousel-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;  /* adjust how wide the fade is */
+    z-index: 10;
+  }
+  
+  .left-overlay {
+    left: 0;
+    background: linear-gradient(to right, var(--background) 0%, transparent 80%);
+  }
+  
+  .right-overlay {
+    right: 0;
+    background: linear-gradient(to left, var(--background) 0%, transparent 100%);
+  }
+  
+  /* 3) SCROLLING TRACK (INFINITE) */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* The flex row that holds ALL slides, duplicates array 3x so can wrap seamlessly */
+  .giac-carousel-track {
+    display: flex;
+    width: max-content;          /* only as wide as its children */
+    animation: scroll 60s linear infinite;
+  }
+  
+  .giac-carousel-track:hover {
+    animation-play-state: paused; /* pause on hover */
+  }
+  
+  /* 4) EACH SLIDE ITEM */
+  .giac-carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.25rem;   /* horizontal gap of 0.5rem (8px) on each side */
+    text-decoration: none;  /* remove underline from <a> */
+    color: inherit;         /* allow CSS to style the label */
+    transition: transform 0.2s ease;
+  }
+  
+  .giac-carousel-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 5) IMAGE STYLING (NO CROPPING) */
+  .giac-carousel-img {
+    max-height: 70px;    /* show entire image, scaled so height is 70px */
+    width: auto;         /* preserve aspect ratio */
+    border: 1px solid #000000;  /* subtle border */
+    border-radius: 8px;      /* slight rounding */
+    margin-bottom: 0.25rem;  /* small gap between image and label */
+  }
+  
+  /* 6) LABEL UNDER EACH IMAGE */
+  .giac-carousel-label {
+    font-size: 0.875rem;   /* ≈14px */
+    font-weight: 500;
+    color: var(--white-icon); /* or whatever color your site uses for icons/text */
+    white-space: nowrap;       /* prevent wrapping */
+  }
+  
+  /* 7) RESPONSIVE: SPEED UP ANIMATION ON MEDIUM+ SCREENS */
+  @media (min-width: 768px) {
+    .giac-carousel-track {
+      animation-duration: 50s;
+    }
+  }
+  
+  /* 8) RESPONSIVE: ON SMALL SCREENS REMOVE MARGIN OR REDUCE SIZE */
+  @media (max-width: 600px) {
+    .giac-carousel-item {
+      margin: 0 0.25rem; /* only 4px on each side */
+    }
+    .giac-carousel-img {
+      max-height: 50px;  /* shrink images on very small screens */
+    }
+  }
+  

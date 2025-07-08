@@ -1,0 +1,64 @@
+/* src/components/Navbar.css */
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 20px;                     /* push it down from the top */
+  left: 50%;                     /* center horizontally */
+  transform: translateX(-50%);	
+  background-color: rgba(28, 28, 28, 0.9);
+  padding: 0.25rem 1.5rem;       /* vertical/horizontal padding */
+  border-radius: 24px;           /* “pill” shape */
+  display: flex;
+  align-items: center;
+  gap: 2rem;                     /* space between logo and links */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar__logo-image {
+  height: 40px; /* Adjust size as needed */
+  width: auto;
+}
+
+
+/* Links container */
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link */
+.navbar__link {
+  color: #F0E6D2;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar__link:hover {
+  color: #D04A2C; /* accent color on hover */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar__links {
+    gap: 1rem;
+  }
+  .navbar__logo {
+    font-size: 1.25rem;
+  }
+}

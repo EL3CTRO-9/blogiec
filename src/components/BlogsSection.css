@@ -1,0 +1,69 @@
+/* src/components/BlogsSection.css */
+
+/* Entire Blogs Section */
+.blogs-section {
+  padding: 4rem 0;
+  background-image: url(../assets/hero-bg.jpg);
+}
+
+.blogs-section__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #cb411f;
+}
+
+.blogs-section__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ------------------------------------------------------------------------- */
+/* Each card starts fully visible at opacity:1 and y:0, but GSAP will override */
+/* ------------------------------------------------------------------------- */
+.blog-card {
+  background-color: #343434;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(236, 95, 8, 0.15);
+}
+
+/* Link wrapper (makes entire card clickable) */
+.blog-card__link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Image at top of card */
+.blog-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Title inside card */
+.blog-card__title {
+  font-size: 1.25rem;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+/* Excerpt text */
+.blog-card__excerpt {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 1rem 1rem;
+  color: #f0f0f0;
+}
