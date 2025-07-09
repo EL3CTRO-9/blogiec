@@ -6,6 +6,7 @@ import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import CyberGuides from "../components/CyberGuides"
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <CyberGuides />
         <ProjectsSection />
         <ContactSection />
       </main>

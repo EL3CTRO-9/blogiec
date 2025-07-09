@@ -1,0 +1,45 @@
+.cyber-guides {
+  padding: 6rem 2rem;
+  background-color: #111; /* Match your dark theme */
+  color: #f0e6d2;
+  text-align: center;
+}
+
+.cyber-guides h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.guide-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.guide-card {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 320px;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.guide-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.guide-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
