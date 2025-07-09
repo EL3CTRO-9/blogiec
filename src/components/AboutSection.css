@@ -1,150 +1,173 @@
-/* src/components/AboutSection.css */
-
 /* =================
    0) OVERRIDE SLICK’S BUILT-IN GUTTERS
    ================= */
-   .slick-list {
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden; /* ensure no extra space from container */
-  }
-  
-  .slick-slide {
-    padding: 0 !important;
-    margin: 0 !important;
-    display: inline-flex;
-    justify-content: center;
-  }
-  
-  /* =================
-     ENTIRE SECTION CONTAINER
-     ================= */
-  .about {
-    padding: 6rem 2rem;
-    background-color: #000000;
-    color: #F0E6D2;
-  }
-  
-  /* =================
-     1) GIAC CAROUSEL WRAPPER
-     ================= */
-  .about__carousel {
-    max-width: 1200px;
-    margin: 0 auto 3rem;
-    position: relative;
-  }
-  
-  /* 1a) Each slide container */
-  .about__cert-slide {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  
-    /* Smaller horizontal gap between each slide */
-    margin: 0 0.125rem; /* 2px on each side */
-    padding: 0;         /* no extra padding */
-  }
-  
-  /* 1b) Certificate image styling */
-  .about__cert-img {
-    max-height: 70px;
-    width: auto;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    margin: 0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .about__cert-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* 1c) Override default slick easing */
-  .slick-track {
-    transition-timing-function: linear !important;
-  }
-  
-  /* 1d) Position dots just below the carousel */
-  .slick-dots {
-    bottom: -20px;
-  }
-  
-  .slick-prev,
-  .slick-next {
-    z-index: 2;
-  }
-  
-  /* =================
-     2) MAIN TWO-COLUMN (PROFILE + BIO)
-     ================= */
+.slick-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slick-slide {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-flex;
+  justify-content: center;
+}
+
+/* =================
+   ENTIRE SECTION CONTAINER
+   ================= */
+.about {
+  padding: 6rem 2rem;
+  background-color: #000000;
+  color: #F0E6D2;
+}
+
+/* =================
+   1) GIAC CAROUSEL WRAPPER
+   ================= */
+.about__carousel {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  position: relative;
+}
+
+/* 1a) Each slide container */
+.about__cert-slide {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.125rem;
+  padding: 0;
+}
+
+/* 1b) Certificate image styling */
+.about__cert-img {
+  max-height: 70px;
+  width: auto;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 100%;
+}
+
+.about__cert-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 1c) Override default slick easing */
+.slick-track {
+  transition-timing-function: linear !important;
+}
+
+/* 1d) Position dots just below the carousel */
+.slick-dots {
+  bottom: -20px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 2;
+}
+
+/* =================
+   2) MAIN TWO-COLUMN (PROFILE + BIO)
+   ================= */
+.about__main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.about__image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.about__text {
+  flex: 1;
+}
+
+.about__text h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.about__text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about__text a {
+  color: #fca311;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about__text a:hover {
+  text-decoration: underline;
+}
+
+/* =================
+   3) RESPONSIVE BREAKPOINTS
+   ================= */
+@media (max-width: 960px) {
   .about__main {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
   }
-  
+
   .about__image img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
   }
-  
-  .about__text {
-    flex: 1;
-  }
-  
+
   .about__text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
-  
+}
+
+@media (max-width: 600px) {
+  .about__cert-img {
+    max-height: 50px;
+  }
+
+  .slick-dots {
+    bottom: -15px;
+  }
+
   .about__text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
   }
-  
-  .about__text a {
-    color: #fca311;
-    text-decoration: none;
-    font-weight: 500;
+
+  .about {
+    padding: 4rem 1rem;
   }
-  
-  .about__text a:hover {
-    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+  .giac-carousel-track {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
-  
-  /* =================
-     3) RESPONSIVE BREAKPOINTS
-     ================= */
-  @media (max-width: 960px) {
-    .about__main {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about__image img {
-      width: 200px;
-      height: 200px;
-    }
-  
-    .about__text h2 {
-      font-size: 2rem;
-    }
+
+  .giac-carousel-item {
+    scroll-snap-align: start;
+    min-width: 100px;
   }
-  
-  @media (max-width: 600px) {
-    .about__cert-img {
-      max-height: 50px;
-    }
-  
-    .slick-dots {
-      bottom: -15px;
-    }
-  }
-  
+}
