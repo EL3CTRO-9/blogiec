@@ -9,7 +9,7 @@
   justify-content: center;
   color: #F0E6D2;
   overflow: hidden;
-  margin-top: 80px; /* Adjust to match actual navbar height */
+  padding-top: 80px; /* same height as navbar to create space under it */
 }
 
 /* 2) Overlay to darken background */
