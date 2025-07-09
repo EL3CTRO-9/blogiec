@@ -9,6 +9,7 @@
   justify-content: center;
   color: #F0E6D2;
   overflow: hidden;
+  margin-top: 80px; /* Adjust to match actual navbar height */
 }
 
 /* 2) Overlay to darken background */
@@ -111,6 +112,7 @@
     flex-direction: column;  /* stack left over right */
     text-align: center;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .hero__left,
