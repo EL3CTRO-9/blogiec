@@ -3,20 +3,21 @@
 /* Navbar container */
 .navbar {
   position: fixed;
-  top: 20px;                     /* push it down from the top */
-  left: 50%;                     /* center horizontally */
-  transform: translateX(-50%);	
+  top: 10px;                      /* Reduced top offset */
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(28, 28, 28, 0.9);
-  padding: 0.25rem 1.5rem;       /* vertical/horizontal padding */
-  border-radius: 24px;           /* “pill” shape */
+  padding: 0.5rem 1rem;           /* Slightly smaller padding for better mobile fit */
+  border-radius: 24px;
   display: flex;
   align-items: center;
-  gap: 2rem;                     /* space between logo and links */
+  gap: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   z-index: 100;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Logo */
 .navbar__logo {
   display: flex;
   align-items: center;
@@ -24,10 +25,9 @@
 }
 
 .navbar__logo-image {
-  height: 40px; /* Adjust size as needed */
+  height: 40px;
   width: auto;
 }
-
 
 /* Links container */
 .navbar__links {
@@ -47,18 +47,26 @@
 }
 
 .navbar__link:hover {
-  color: #D04A2C; /* accent color on hover */
+  color: #D04A2C;
 }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem;
-  }
-  .navbar__links {
+    top: 5px;                     /* tighter spacing for small screens */
+    padding: 0.25rem 1rem;        /* smaller padding */
     gap: 1rem;
   }
-  .navbar__logo {
-    font-size: 1.25rem;
+
+  .navbar__logo-image {
+    height: 30px;                 /* smaller logo */
+  }
+
+  .navbar__link {
+    font-size: 0.9rem;            /* slightly smaller text */
+  }
+
+  .navbar__links {
+    gap: 0.75rem;
   }
 }
