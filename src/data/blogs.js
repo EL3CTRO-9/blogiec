@@ -3,6 +3,7 @@ import rasp from "../assets/rasp.png";
 import click from "../assets/click.png";
 import kernal from "../assets/kernal.png";
 import finger from "../assets/finger.png";
+import train from "../assets/train.png"
 
 export const blogs = [
   {
