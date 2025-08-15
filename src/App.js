@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import CyberGuidesSection from "./components/CyberGuidesSection";
 import GuideDetail from "./components/GuideDetail";
 import Secret from "./components/secret";
-import VocabAndFacts from "./components/VocabAndFacts";
+
 
 import "./index.css";
 
