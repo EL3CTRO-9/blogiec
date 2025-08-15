@@ -1,21 +1,24 @@
 // src/data/guides.js
+export const guides = [
+  {
+    id: "IOCL Internship Report",
+    title: "IOCL Internship Report",
+    description: "Important port numbers and what they are used for.",
+    content: `
+      ## What is Phishing?
+      Phishing is a type of cyber attack ...
+      (longer content here)
+    `,
+  },
+  {
+    id: "Deepak Nitrite Internship Report",
+    title: "Deepak Nitrite Internship Report",
+    description: "Best practices for creating and managing passwords.",
+    content: `
+      ## Why Passwords Matter
+      Weak passwords are a top attack vector...
+    `,
+  },
 
-const guides = [
-  {
-    title: "Understanding Firewalls: A Beginner’s Guide",
-    summary: "Learn what firewalls are, how they work, and why they’re essential in cybersecurity.",
-    link: "/guides/firewalls", // this can be internal or an external blog link
-  },
-  {
-    title: "Cyber Hygiene 101",
-    summary: "Tips and best practices for staying secure online.",
-    link: "/guides/cyber-hygiene",
-  },
-  {
-    title: "What Is Social Engineering?",
-    summary: "An overview of social engineering tactics and how to avoid them.",
-    link: "/guides/social-engineering",
-  },
+  
 ];
-
-export default guides;

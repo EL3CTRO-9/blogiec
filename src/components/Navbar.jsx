@@ -33,12 +33,17 @@ export default function Navbar() {
           </a>
         </li>
         <li>
+          <a href="#guides" className="navbar__link">
+            Guides
+          </a>
+        </li>
+        <li>
           <a href="#projects" className="navbar__link">
             Projects
           </a>
         </li>
         <li>
-          <a href="#contact" className="navbar__link">
+          <a href="#footer" className="navbar__link">
             Contact
           </a>
         </li>

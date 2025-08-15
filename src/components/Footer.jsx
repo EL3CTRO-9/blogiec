@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="footer__container">
         <p>© {new Date().getFullYear()} Sahil Shaikh. All rights reserved.</p>
         <ul className="footer__social">
