@@ -45,7 +45,7 @@ function App() {
          {/* Secret route */}
         <Route path="/h4x90p-secret-doorway-29" element={<Secret />} />
         <Route path="*" element={<h2>Page Not Found</h2>} />
-        <Route path="/hidden/vocab" element={<VocabAndFacts />} />
+        
       </Routes>
 
       <Footer />
