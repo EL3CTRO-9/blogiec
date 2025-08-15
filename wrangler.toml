@@ -1,4 +1,16 @@
 name = "blogiec"
 compatibility_date = "2025-07-08"
 
-assets = { directory = "./build" }
+[site]
+bucket = "./build"
+
+[build]
+command = "npm run build"
+
+[pages]
+build_output_dir = "./build"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
