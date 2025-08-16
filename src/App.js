@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import CyberGuidesSection from "./components/CyberGuidesSection";
 import GuideDetail from "./components/GuideDetail";
 import Secret from "./components/secret";
+import SecretTrigger from "./components/SecretTrigger";
+
 
 
 import "./index.css";
@@ -24,7 +26,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-
+      <SecretTrigger />  {/* <-- Add this here */}
       <Routes>
         <Route
           path="/"
