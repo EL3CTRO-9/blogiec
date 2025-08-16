@@ -1,5 +1,4 @@
 name = "blogiec"
 compatibility_date = "2025-07-08"
 
-[site]
-bucket = "./build"
+
