@@ -1,5 +1,5 @@
 name = "blogiec"
+main = "_worker.js"
 compatibility_date = "2025-07-08"
 
-assets = { directory = "./build" }
-main = "_worker.js"
+assets = { directory = "./build", binding = "ASSETS" }
